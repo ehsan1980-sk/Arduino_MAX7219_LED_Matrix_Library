@@ -27,7 +27,7 @@ You can daisychain multiple LED-Matrices. In theory this library has no limit on
   
 ## Diagram
   
-![alt text](https://github.com/Mimaku/Arduino_MAX7219_LED_Matrix_Library/blob/master/examples/MAX7219/LED-Matrix_Steckplatine.svg "Diagram / Breadboard layout")
+![alt text](https://github.com/Mimaku/Arduino_MAX7219_LED_Matrix_Library/blob/master/examples/MAX7219/LED-Matrix_Steckplatine.png "Diagram / Breadboard layout")
   
 ## Usage
 
@@ -36,22 +36,22 @@ You can daisychain multiple LED-Matrices. In theory this library has no limit on
 MAX7219 Matrix(NUMBER_OF_Devices, DATAPIN, CLOCKPIN, LOADPIN);
   
 void setup() {  
-    // individual settings, if required  
+  // individual settings, if required  
 }  
   
 ...  
   
 void loop() {  
-    // First LED in upper left Corner (Position: x = 0, y = 0)  
-	Matrix.setLed(1, 0, 0, true);  
-	delay(1000);  
-	
-	// 3rd LED in second row  (Position: x = 2, y = 1)  
-	Matrix.setLed(1, 2, 1, true);  
-	delay(1000);  
-	
-	// clear display  
-	Matrix.clearDisplay(1);  
-	delay(1000);  
+  // First LED in upper left Corner (Position: x = 0, y = 0)
+  Matrix.setLed(1, 0, 0, true);
+  delay(1000);  
+  
+  // 3rd LED in second row  (Position: x = 2, y = 1)  
+  Matrix.setLed(1, 2, 1, true);  
+  delay(1000);  
+  
+  // clear display  
+  Matrix.clearDisplay(1);  
+  delay(1000);  
 }  
 ```  
